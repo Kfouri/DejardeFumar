@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" 
+                android:id="@+id/mainLayout" 
+                android:background="@color/background" 
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <include android:id="@+id/titlebar" layout="@layout/titulobar" />
+    <RelativeLayout android:id="@+id/ad" 
+                    android:background="@android:color/white" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content" 
+                    android:layout_alignParentBottom="true">
+ 
+           <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-8178489486911148/6893056719" />
+                               
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center" 
+               android:id="@+id/compartir" 
+               android:background="@drawable/background_dark" 
+               android:padding="@dimen/padding_medium" 
+               android:focusable="true" 
+               android:layout_width="@dimen/titlebar_icon" 
+               android:layout_height="@dimen/titlebar_icon" 
+               android:src="@drawable/ic_action_share" 
+               android:layout_alignParentTop="true" 
+               android:layout_alignParentRight="true" 
+               style="@style/Boton" />
+    
+    <LinearLayout android:gravity="center" 
+                  android:orientation="horizontal" 
+                  android:id="@+id/missatge" 
+                  android:background="@drawable/gradient_subtitle" 
+                  android:layout_width="fill_parent" 
+                  android:layout_height="wrap_content" 
+                  android:layout_below="@id/titlebar">
+        <TextView android:id="@+id/missatgeText" 
+                  android:layout_width="wrap_content" 
+                  android:layout_height="wrap_content" 
+                  android:text="@string/principal" 
+                  style="@style/TextoSubtitulo" />
+    </LinearLayout>
+    
+    <ScrollView android:id="@+id/ScrollViewCuerpo" 
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent" 
+                android:layout_above="@id/ad" 
+                android:layout_below="@id/missatge" 
+                style="@style/Scroll">
+        <LinearLayout android:gravity="center|center" 
+                      android:orientation="vertical" 
+                      android:id="@+id/LinearLayout01" 
+                      android:paddingLeft="@dimen/padding_xlarge" 
+                      android:paddingRight="@dimen/padding_xlarge" 
+                      android:layout_width="fill_parent" 
+                      android:layout_height="fill_parent">
+            <View android:layout_width="fill_parent" 
+                  android:layout_height="@dimen/padding_large" />
+            <TextView android:id="@+id/main_label_quit" 
+                      android:layout_width="fill_parent" 
+                      android:layout_height="wrap_content" 
+                      android:text="@string/dia" 
+                      style="@style/TextoStatsLabels" />
+
+            <TextView android:id="@+id/fecha" 
+                      style="@style/TextoStatsDetails" 
+                      android:layout_width="wrap_content" 
+                      android:layout_height="wrap_content" 
+                      android:text="02 April 2012"/>
+            
+            <View android:layout_width="fill_parent" 
+                  android:layout_height="@dimen/padding_large" />
+
+            <TextView android:id="@+id/titulo_dias" 
+                      android:layout_width="fill_parent" 
+                      android:layout_height="wrap_content" 
+                      android:text="@string/cantidaddia" 
+                      style="@style/TextoStatsLabels" />
+            <TextView android:id="@+id/dias" 
+                      android:layout_width="wrap_content" 
+                      android:layout_height="wrap_content" 
+                      android:text="30 days" 
+                      style="@style/TextoStatsDetails" />
+            
+            <View android:layout_width="fill_parent" 
+                  android:layout_height="@dimen/padding_large" />
+
+            <TextView android:id="@+id/titulo_cantidad" 
+                      android:layout_width="fill_parent" 
+                      android:layout_height="wrap_content" 
+                      android:text="@string/cig_no_fumados" 
+                      style="@style/TextoStatsLabels" />
+            <TextView android:id="@+id/cantidad" 
+                      android:layout_width="wrap_content" 
+                      android:layout_height="wrap_content" 
+                      android:text="45 cigarretes" 
+                      style="@style/TextoStatsDetails" />
+            
+            <View android:layout_width="fill_parent" 
+                  android:layout_height="@dimen/padding_large" />
+            <TextView android:id="@+id/titulo_ahorrado" 
+                      android:layout_width="fill_parent" 
+                      android:layout_height="wrap_content" 
+                      android:text="@string/dinero" 
+                      style="@style/TextoStatsLabels" />
+            <TextView android:id="@+id/ahorrado" 
+                      android:layout_width="wrap_content" 
+                      android:layout_height="wrap_content" 
+                      android:text="$145.23" 
+                      style="@style/TextoStatsDetails" />
+            
+        </LinearLayout>
+    </ScrollView>
+    <View android:layout_below="@id/titlebar" 
+          style="@style/ShadowDown" />
+    <View android:layout_below="@id/missatge" 
+          style="@style/ShadowDown" />
+</RelativeLayout>

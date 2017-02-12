@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background" 
+                android:layout_width="fill_parent" 
+                android:layout_height="fill_parent"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <include android:id="@+id/titulobar" 
+             layout="@layout/titulobar" />
+    
+    <RelativeLayout android:id="@+id/ad" 
+                    android:background="@android:color/white"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true">
+ 
+           <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+               android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-8178489486911148/6893056719" />
+                               
+    </RelativeLayout>
+
+<!--
+    <RelativeLayout android:orientation="horizontal" 
+                    android:id="@+id/footer" 
+                    android:background="@drawable/gradient_subtitle" 
+                    android:padding="@dimen/padding_small" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="@dimen/bottombar_icon" 
+                    android:layout_alignParentBottom="true">
+ 
+        <ImageView android:id="@+id/linkedin" 
+                   android:background="@android:color/transparent" 
+                   android:padding="0.0dip" 
+                   android:layout_width="@dimen/bottombar_icon" 
+                   android:layout_height="@dimen/bottombar_icon" 
+                   android:layout_margin="0.0dip" 
+                   android:src="@drawable/feedbackiconlinkedin" 
+                   android:layout_alignParentLeft="true" 
+                   android:layout_alignParentBottom="true" 
+                   style="@style/BotonSemitransparente" />
+        <ImageView android:id="@+id/twitter" 
+                   android:background="@android:color/transparent" 
+                   android:padding="0.0dip" 
+                   android:layout_width="@dimen/bottombar_icon" 
+                   android:layout_height="@dimen/bottombar_icon" 
+                   android:layout_margin="0.0dip" 
+                   android:src="@drawable/feedbackicontwitter" 
+                   android:adjustViewBounds="true" 
+                   android:layout_toRightOf="@id/linkedin" 
+                   style="@style/BotonSemitransparente" />
+        <ImageView android:id="@id/facebook" 
+                   android:background="@*android:color/transparent" 
+                   android:padding="0.0dip" 
+                   android:layout_width="@dimen/bottombar_icon" 
+                   android:layout_height="@dimen/bottombar_icon" 
+                   android:layout_margin="0.0dip" 
+                   android:src="@drawable/feedbackiconfacebook" 
+                   android:layout_toRightOf="@id/twitter" 
+                   android:layout_alignParentBottom="true" 
+                   style="@style/BotonSemitransparente" />
+        <ImageView android:id="@id/googlepluscustom" 
+                   android:background="@*android:color/transparent" 
+                   android:padding="0.0dip" 
+                   android:layout_width="@dimen/bottombar_icon" 
+                   android:layout_height="@dimen/bottombar_icon" 
+                   android:layout_margin="0.0dip" 
+                   android:src="@drawable/feedbackicongoogleplus" 
+                   android:layout_toRightOf="@id/facebook" 
+                   android:layout_alignParentBottom="true" 
+                   style="@style/BotonSemitransparente" />
+        <com.google.android.gms.plus.PlusOneButton 
+                   android:id="@id/googleplus" 
+                   android:visibility="invisible" 
+                   android:layout_width="wrap_content" 
+                   android:layout_height="wrap_content" 
+                   android:layout_marginLeft="@dimen/padding_small" 
+                   android:layout_toRightOf="@id/facebook" 
+                   plus:annotation="bubble" 
+                   plus:size="standard"
+          		   xmlns:plus="http://schemas.android.com/apk/lib/com.google.android.gms.plus" />
+          		    -->
+<!--
+        <RelativeLayout android:layout_width="wrap_content" 
+                        android:layout_height="wrap_content" 
+                        android:layout_marginRight="@dimen/padding_small" 
+                        android:layout_alignParentRight="true" 
+                        android:layout_centerVertical="true">
+ 
+            <TextView android:textColor="@android:color/white" 
+                      android:id="@+id/quittersLabel"  
+                      android:padding="0.0dip" 
+                      android:visibility="visible" 
+                      android:layout_width="wrap_content" 
+                      android:layout_height="wrap_content" 
+                      android:text="quitters" 
+                      android:layout_alignParentRight="true" 
+                      android:layout_centerVertical="true" 
+                      style="@style/TextoPequenyo" />
+            <TextView android:textStyle="bold" 
+                      android:textColor="@android:color/white" 
+                      android:id="@+id/quittersNumber" 
+                      android:padding="0.0dip" 
+                      android:visibility="visible" 
+                      android:layout_width="wrap_content" 
+                      android:layout_height="wrap_content" 
+                      android:layout_toLeftOf="@id/quittersLabel" 
+                      android:layout_centerVertical="true" 
+                      style="@style/TextoPequenyo" />
+            <ImageView android:id="@+id/quittersImage" 
+                       android:visibility="visible" 
+                       android:layout_width="wrap_content" 
+                       android:layout_height="@dimen/padding_large" 
+                       android:layout_marginRight="@dimen/padding_small" 
+                       android:src="@drawable/people_white" 
+                       android:scaleType="fitEnd" 
+                       android:layout_toLeftOf="@id/quittersNumber" 
+                       android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+                  android:layout_above="@id/footer"
+-->
+    <LinearLayout android:orientation="vertical" 
+                  android:layout_width="fill_parent" 
+                  android:layout_height="fill_parent" 
+                  android:layout_margin="@dimen/padding_small" 
+ 
+                  android:layout_below="@id/titulobar">
+
+        <LinearLayout android:orientation="horizontal" 
+                      android:layout_width="fill_parent" 
+                      android:layout_height="fill_parent" 
+                      android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" 
+                          android:orientation="vertical" 
+                          android:id="@+id/mainscreen_main" 
+                          android:background="@drawable/background" 
+                          android:paddingLeft="10.0dip" 
+                          android:paddingRight="5.0dip" 
+                          android:focusable="true" 
+                          android:layout_width="fill_parent" 
+                          android:layout_height="fill_parent" 
+                          android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center" 
+                           android:id="@+id/imagePrincipal" 
+                           android:background="@drawable/perfil" 
+                           android:layout_width="@dimen/mainScreenIcon" 
+                           android:layout_height="@dimen/mainScreenIcon" />
+                 <TextView android:textSize="@dimen/textSizeMedium" 
+                           android:gravity="center" 
+                           android:id="@+id/textView2" 
+                           android:layout_width="fill_parent" 
+                           android:layout_height="wrap_content" 
+                           android:text="@string/principal" 
+                           style="@style/TextoMedio" />
+            </LinearLayout>
+
+            <LinearLayout android:gravity="center" 
+                          android:orientation="vertical" 
+                          android:id="@+id/mainscreen_health" 
+                          android:background="@drawable/background" 
+                          android:paddingLeft="10.0dip" 
+                          android:paddingRight="5.0dip" 
+                          android:focusable="true" 
+                          android:layout_width="fill_parent" 
+                          android:layout_height="fill_parent" 
+                          android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center" 
+                           android:id="@+id/ImageMarket"
+                           android:background="@drawable/market"
+                           android:layout_width="@dimen/mainScreenIcon" 
+                           android:layout_height="@dimen/mainScreenIcon" />
+                <TextView android:textSize="@dimen/textSizeMedium" 
+                          android:gravity="center" 
+                          android:id="@+id/TextView01" 
+                          android:layout_width="fill_parent" 
+                          android:layout_height="wrap_content" 
+                          android:text="@string/mainscreen_market"
+                          style="@style/TextoMedio" />
+            </LinearLayout>
+
+        </LinearLayout>
+      
+        <LinearLayout android:orientation="horizontal" 
+                      android:layout_width="fill_parent" 
+                      android:layout_height="fill_parent" 
+                      android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" 
+                          android:orientation="vertical" 
+                          android:id="@+id/mainscreen_achievements" 
+                          android:background="@drawable/background" 
+                          android:paddingLeft="10.0dip" 
+                          android:paddingRight="5.0dip" 
+                          android:focusable="true" 
+                          android:layout_width="fill_parent" 
+                          android:layout_height="fill_parent" 
+                          android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center" 
+                           android:id="@+id/ImageLogros" 
+                           android:background="@drawable/copa4" 
+                           android:layout_width="@dimen/mainScreenIcon" 
+                           android:layout_height="@dimen/mainScreenIcon" />
+                <TextView android:textSize="@dimen/textSizeMedium" 
+                          android:gravity="center" 
+                          android:id="@+id/TextView03" 
+                          android:layout_width="fill_parent" 
+                          android:layout_height="wrap_content" 
+                          android:text="@string/logros" 
+                          style="@style/TextoMedio" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" 
+                          android:orientation="vertical" 
+                          android:id="@+id/mainscreen_preferences" 
+                          android:background="@drawable/background" 
+                          android:paddingLeft="5.0dip" 
+                          android:paddingRight="10.0dip" 
+                          android:focusable="true" 
+                          android:layout_width="fill_parent" 
+                          android:layout_height="fill_parent" 
+                          android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center" 
+                           android:id="@+id/ImagePreferencias" 
+                           android:background="@drawable/ico_preferencias" 
+                           android:layout_width="@dimen/mainScreenIcon" 
+                           android:layout_height="@dimen/mainScreenIcon" />
+                <TextView android:textSize="@dimen/textSizeMedium" 
+                          android:gravity="center" 
+                          android:id="@+id/TextView04" 
+                          android:layout_width="fill_parent" 
+                          android:layout_height="wrap_content" 
+                          android:text="@string/preferencias" 
+                          style="@style/TextoMedio" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_below="@+id/titulobar" style="@style/ShadowDown" />
+</RelativeLayout>

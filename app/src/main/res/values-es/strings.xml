@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="name_app">Deja de Fumar</string>
+    
+    <string name="principal">Principal</string>
+    <string name="logros">Logros</string>
+    <string name="preferencias">Configuración</string>
+    <string name="dia">Día en el que dejaste de fumar...</string>
+    <string name="cantidaddia">Días sin fumar...</string>
+    <string name="cig_no_fumados">Cigarrillos no fumados...</string>
+    <string name="dinero">Dinero ahorrado...</string>
+    <string name="deja_titulo">Deja de Fumar!!!</string>
+    <string name="continuar">Continuar...</string>
+    <string name="tus_datos">Tus Datos...</string>
+    <string name="cuantos_por_dia">¿Cuántos cigarrilos fumabas por día?</string>
+    <string name="dia_dejado_fumar">¿Que día has dejado de fumar?</string>
+    <string name="precio_habitual">¿Cuál era el Precio de tu cajetilla habitual?</string>
+    <string name="cig_cagetilla">¿Cuántos cigarrillos venían en tu cajetilla?</string>
+    
+    <string name="logro_titulo1">Primeros Pasos...</string>
+    <string name="logro_0">Un día sin fumar</string>
+    <string name="logro_1">Primer # ahorrado</string>
+    <string name="logro_2">Cinco días sin fumar</string>
+    
+    <string name="logro_titulo2">Avanzando...</string>
+    <string name="logro_3">10# Ahorrados</string>
+    <string name="logro_4">Diez días sin fumar</string>
+    <string name="logro_5">Quince días sin fumar</string>
+    
+    <string name="logro_titulo3">Esto va en serio...</string>
+    <string name="logro_6">Veinte días sin fumar</string>
+    <string name="logro_7">Un mes sin fumar</string>
+    
+    <string name="logro_titulo4">Lo estas haciendo muy bien...</string>
+    <string name="logro_8">50# ahorrados</string>
+    <string name="logro_9">Dos meses sin fumar</string>
+    <string name="logro_10">Cien días sin fumar</string>
+    <string name="logro_11">Cuatro meses sin fumar</string>
+    
+    <string name="logro_titulo5">Eres una Máquina...</string>
+    <string name="logro_12">Seis meses sin fumar</string>
+    <string name="logro_13">Doscientos días sin fumar</string>
+    <string name="logro_14">Ocho meses sin fumar</string>
+    
+    <string name="logro_titulo6">Una vida sin humo...</string>
+    <string name="logro_15">100# ahorrados</string>
+    <string name="logro_16">Trescientos días sin fumar</string>
+    
+    <string name="logro_titulo7">Humo??? Que es eso???</string>
+    <string name="logro_17">UN AÑOS SIN FUMAR!!!</string>
+    <string name="logro_18">Un año y dos meses sin fumar</string>
+    <string name="logro_19">Un año y cuatro meses sin fumar</string>
+    <string name="logro_20">Un año y seis meses sin fumar</string>
+    
+    <string name="logro_titulo8">Por fin libre!!!</string>
+    <string name="logro_21">DOS AÑOS SIN FUMAR!!!</string>
+    
+    <string name="pre_titulo">Preferencias</string>
+    <string name="pre_divisa_titulo">Símbolo de tu divisa</string>
+    <string name="pre_divisa_descripcion">Indica cuál es el simbolo de tu divisa.</string>
+    <string name="pre_reset_descripcion">Puedes Reiniciar tu fecha de último cigarrillo, precio de tu cajetilla y cuantos cigarrillos fumabas por día, ten en cuenta que perderás tus logros</string>
+    <string name="pre_actualizar_titulo">Actualizar tus datos</string>
+    <string name="pre_actualizar_descripcion">Puedes Actualizar tu fecha de último cigarrillo, precio de tu cajetilla y cuantos cigarrillos fumabas por día, esto no afecta a tus logros</string>
+    <string name="pre_acerca_de">Acerca de...</string>
+    <string name="pre_compartir">Compartir aplicación</string>
+    <string name="pre_compartir_titulo">Ten en cuenta que se reiniciarán todos los valores y logros</string>
+    <string name="pre_compartir_apli">Descárgate ya ésta aplicación y controla desde cuando no fumas...</string>
+    
+    <string name="tus_cant_cig">Debes indicar la cantidad de cigarrillos por día que fumabas...</string>
+    <string name="tus_precio">Debes indicar el precio de tu cajetilla habitual...</string>
+    <string name="tus_cig_por_dia">Debes indicar cuántos cigarrillos tenia tu cajetilla habitual...</string>
+    <string name="tus_fecha">La fecha no puede ser posterior a la de hoy.</string>
+    
+    <string name="prin_comp_titulo">¡¡¡Deja de fumar!!!</string>
+    <string name="prin_comp_fumo">No fumo desde: </string>
+    <string name="prin_comp_dia_sin">Días sin fumar: </string>
+    <string name="prin_comp_cig_no">Cigarrillos no fumados: </string>
+    <string name="prin_comp_dinero">Dinero ahorrado: </string>
+    
+    <string name="action_settings">Acción</string>
+    
+    <string name="frase_titulo">Sabías que...</string>
+    <string name="frase1">No intentarlo es un fracaso, recaer forma parte del intento.</string>
+    <string name="frase2">Si te ofrecen un cigarro, COMETELO antes de FUMARTELO.</string>
+    <string name="frase3">Los malos momentos que se pasan al dejar de fumar, no son por dejar de fumar... sino por haber fumado.</string>
+    <string name="frase4">Hoy es un día maravilloso. Hoy no he fumado.</string>
+    <string name="frase5">Cada vez que enciendes un cigarro, algo se apaga en tu interior.</string>
+    <string name="frase6">Hagas lo que hagas por dejar de fumar, no será tan peligroso como seguir fumando.</string>
+    <string name="frase7">No intentarlo es un fracaso, recaer forma parte del intento.</string>
+    <string name="frase8">El tabaco no llena el vacío, lo crea.</string>
+    <string name="frase9">Nunca esperes una situación perfecta para dejar de fumar.</string>
+    <string name="frase10">No hagas de tu cuerpo la tumba de tu alma.</string>
+    <string name="frase11">Si eres capaz de dejar de fumar... eres capaz de cualquier cosa.</string>
+    <string name="frase12">Apagalo... y encenderás los poderes ocultos de la voluntad.</string>
+    <string name="frase13">El último cigarrillo... sabia decisión. Pudiera ser una de las más importantes de la vida.</string>
+    <string name="frase14">Si fumas por tener un problema, al fumar tendrás dos.</string>
+    <string name="frase15">Todo lo que sientas por no fumar, no desaparecerá fumando.</string>
+
+    <string name="rate">Si has disfrutado con Deja de Fumar, por favor tómese un momento para evaluarlo. Gracias por su apoyo!</string>
+    <string name="rate_later">Luego</string>
+    <string name="rate_no">No, gracias</string>
+    <string name="rate_rate">Evaluar Deja de Fumar</string>
+    <string name="dias">Día/s</string>
+    <string name="cigarrillos">cigarrillos</string>
+    <string name="mainscreen_market">Más Apps</string>
+    <string name="title_activity_web">Más App</string>
+
+
+</resources>
